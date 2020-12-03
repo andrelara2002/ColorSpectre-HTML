@@ -1,0 +1,68 @@
+:root {
+  --color-one: #f2059f;
+  --color-two: #05dbf2;
+  --color-three: #04d94f;
+  --color-four: #f2cb05;
+  --color-five: #f28705;
+}
+body {
+  animation-name: colorChange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+  color: white;
+  font: 700 1.2rem sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding: 0;
+  margin: 0;
+}
+.littleText {
+  display: flex;
+}
+a {
+  text-transform: none;
+  text-decoration: none;
+  transition: 300ms;
+
+  border: 3px solid black;
+
+  color: white;
+  background: black;
+  padding: 1rem;
+}
+a:hover {
+  background: white;
+  color: black;
+
+  border-color: black;
+  transition: 300ms;
+}
+
+@keyframes colorChange {
+  0%,
+  100% {
+    background: var(--color-one);
+  }
+  20% {
+    background: var(--color-two);
+  }
+  40% {
+    background: var(--color-three);
+  }
+
+  60% {
+    background: var(--color-four);
+  }
+  80% {
+    background: var(--color-five);
+  }
+}
